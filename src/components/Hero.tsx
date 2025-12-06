@@ -22,37 +22,37 @@ export function Hero() {
       gsap.from(navRef.current, {
         y: -50,
         opacity: 0,
-        duration: 1,
+        duration: 1.2, // Increased duration
         ease: "power3.out",
-        delay: 0.2,
+        delay: 0.1, // Adjusted delay
       });
 
       // Title animation
       gsap.from(titleRef.current, {
-        y: 100,
+        x: -100,
         opacity: 0,
-        duration: 1.2,
-        ease: "power3.out",
-        delay: 0.5,
+        duration: 1.2, // Increased duration
+        ease: "power3.out", // Changed ease
+        delay: 0.3, // Adjusted delay
       });
 
       // Subtitle animation
       gsap.from(subtitleRef.current, {
-        y: 50,
+        x: 50,
         opacity: 0,
-        duration: 1,
-        ease: "power3.out",
-        delay: 0.8,
+        duration: 1.1, // Increased duration
+        ease: "power3.out", // Changed ease
+        delay: 0.5, // Adjusted delay
       });
 
       // Buttons animation
-      gsap.from(buttonsRef.current?.children || [], {
-        scale: 0.8,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.2,
-        ease: "power3.out",
-        delay: 1.1,
+      gsap.to(buttonsRef.current?.children || [], {
+        x: 0,
+        autoAlpha: 1,
+        duration: 0.6, // Decreased duration
+        stagger: 0.08, // Decreased stagger
+        ease: "power3.out", // Decreased delay
+        delay: 0.6,
       });
     }, heroRef);
 
@@ -229,7 +229,7 @@ export function Hero() {
                     productsSection.scrollIntoView({ behavior: "smooth" });
                   }
                 }}
-                className="bg-white text-black px-6 py-3 sm:px-10 sm:py-4 hover:bg-gray-100 transition-all duration-300 flex items-center justify-center gap-2 group uppercase tracking-wider"
+                className="bg-white text-black px-6 py-3 sm:px-10 sm:py-4 hover:bg-gray-100 transition-all duration-300 flex items-center justify-center gap-2 group uppercase tracking-wider opacity-0 invisible"
               >
                 Explore Collections
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -242,7 +242,7 @@ export function Hero() {
                     contactSection.scrollIntoView({ behavior: "smooth" });
                   }
                 }}
-                className="border-2 border-white text-white px-6 py-3 sm:px-10 sm:py-4 hover:bg-white hover:text-black transition-all uppercase tracking-wider"
+                className="border-2 border-white text-white px-6 py-3 sm:px-10 sm:py-4 hover:bg-white hover:text-black transition-all uppercase tracking-wider opacity-0 invisible"
               >
                 Book Consultation
               </button>
