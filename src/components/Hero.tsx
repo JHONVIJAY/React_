@@ -60,7 +60,7 @@ export function Hero() {
   }, []);
 
   return (
-    <div ref={heroRef} className="relative h-screen">
+    <div ref={heroRef} className="relative h-screen w-screen overflow-x-hidden overflow-y-clip">
       {/* Navigation */}
 
       <nav
@@ -201,12 +201,12 @@ export function Hero() {
 
       {/* Hero Content */}
 
-      <div className="relative z-10 h-full flex items-center px-6 md:px-12">
+      <div className="relative z-10 h-full flex items-center px-6 md:px-12 w-full">
         <div className="max-w-7xl mx-auto w-full">
           <div className="max-w-2xl text-white">
             <h1
               ref={titleRef}
-              className="text-6xl md:text-8xl mb-8 leading-tight"
+              className="text-5xl sm:text-6xl md:text-8xl mb-8 leading-tight"
             >
               Timeless
               <br />
@@ -229,7 +229,7 @@ export function Hero() {
                     productsSection.scrollIntoView({ behavior: "smooth" });
                   }
                 }}
-                className="bg-white text-black px-10 py-4 hover:bg-gray-100 transition-all duration-300 flex items-center justify-center gap-2 group uppercase tracking-wider"
+                className="bg-white text-black px-6 py-3 sm:px-10 sm:py-4 hover:bg-gray-100 transition-all duration-300 flex items-center justify-center gap-2 group uppercase tracking-wider"
               >
                 Explore Collections
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -242,7 +242,7 @@ export function Hero() {
                     contactSection.scrollIntoView({ behavior: "smooth" });
                   }
                 }}
-                className="border-2 border-white text-white px-10 py-4 hover:bg-white hover:text-black transition-all uppercase tracking-wider"
+                className="border-2 border-white text-white px-6 py-3 sm:px-10 sm:py-4 hover:bg-white hover:text-black transition-all uppercase tracking-wider"
               >
                 Book Consultation
               </button>
