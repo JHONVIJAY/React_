@@ -65,7 +65,7 @@ export function Hero() {
 
       <nav
         ref={navRef}
-        className="absolute top-0 left-0 right-0 z-20 px-6 py-6 md:px-12 bg-gradient-to-b from-black/30 to-transparent"
+        className="absolute top-0 left-0 right-0 z-20 px-6 py-6 md:px-12 bg-linear-to-b from-black/30 to-transparent"
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div
@@ -196,7 +196,7 @@ export function Hero() {
           className="w-full h-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-r from-black/60 via-black/30 to-transparent" />
       </div>
 
       {/* Hero Content */}

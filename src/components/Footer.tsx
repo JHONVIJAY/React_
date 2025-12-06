@@ -148,7 +148,7 @@ export function Footer() {
             <p className="text-gray-400 mb-6">
               Subscribe to receive design inspiration and new product launches
             </p>
-            <form className="flex gap-4">
+            <form className="flex flex-col sm:flex-row gap-4">
               <input
                 type="email"
                 placeholder="Enter your email"
@@ -156,7 +156,7 @@ export function Footer() {
               />
               <button
                 type="submit"
-                className="border border-white px-8 py-3 hover:bg-white hover:text-black transition-all uppercase tracking-wider flex items-center gap-2"
+                className="border border-white px-6 py-3 hover:bg-white hover:text-black transition-all uppercase flex items-center gap-2  sm:flex-none"
               >
                 <Mail className="w-4 h-4" />
                 Subscribe

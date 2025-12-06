@@ -44,7 +44,7 @@ export function Featured() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div ref={imageRef} className="relative">
-            <div className="aspect-[3/4] overflow-hidden">
+            <div className="aspect-3/4 overflow-hidden">
               <ImageWithFallback
                 src="https://images.unsplash.com/photo-1511405622496-1facf569089a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwaW50ZXJpb3IlMjB0aWxlc3xlbnwxfHx8fDE3NjQ5OTUxODh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                 alt="Featured collection"
@@ -83,19 +83,19 @@ export function Featured() {
             </p>
             <ul className="space-y-4 pt-4">
               <li className="flex items-start gap-3">
-                <div className="w-1 h-1 bg-black mt-2 flex-shrink-0" />
+                <div className="w-1 h-1 bg-black mt-2 shrink-0" />
                 <span className="text-gray-600">
                   Premium Italian manufacturing
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <div className="w-1 h-1 bg-black mt-2 flex-shrink-0" />
+                <div className="w-1 h-1 bg-black mt-2 shrink-0" />
                 <span className="text-gray-600">
                   Sustainable production methods
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <div className="w-1 h-1 bg-black mt-2 flex-shrink-0" />
+                <div className="w-1 h-1 bg-black mt-2 shrink-0" />
                 <span className="text-gray-600">Award-winning design team</span>
               </li>
             </ul>
