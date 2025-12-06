@@ -9,7 +9,7 @@ const features = [
   {
     icon: Shield,
     title: "Premium Quality",
-    description: "Italian craftsmanship with advanced materials",
+    description: "Quality craftsmanship with advanced materials",
   },
   {
     icon: Droplets,

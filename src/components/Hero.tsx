@@ -217,7 +217,7 @@ export function Hero() {
               ref={subtitleRef}
               className="text-lg md:text-xl mb-12 text-white/90 leading-relaxed"
             >
-              Discover our curated collection of premium tiles, where Italian
+              Discover our curated collection of premium tiles, where quality
               craftsmanship meets contemporary design
             </p>
 

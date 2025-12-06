@@ -73,7 +73,7 @@ export function Featured() {
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
               Since 1995, Ava Tiles has been at the forefront of tile
-              innovation, combining traditional Italian craftsmanship with
+              innovation, combining traditional craftsmanship with
               cutting-edge technology to create surfaces that inspire.
             </p>
             <p className="text-gray-600 leading-relaxed">
@@ -85,7 +85,7 @@ export function Featured() {
               <li className="flex items-start gap-3">
                 <div className="w-1 h-1 bg-black mt-2 shrink-0" />
                 <span className="text-gray-600">
-                  Premium Italian manufacturing
+                  Premium Quality manufacturing
                 </span>
               </li>
               <li className="flex items-start gap-3">

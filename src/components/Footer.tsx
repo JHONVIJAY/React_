@@ -43,7 +43,7 @@ export function Footer() {
               AVA TILES
             </div>
             <p className="text-gray-400 mb-8 leading-relaxed max-w-md">
-              Premium Italian tiles for residential and commercial spaces.
+              Premium High-quality tiles for residential and commercial spaces.
               Crafting excellence since 1995.
             </p>
             <div className="flex gap-4">
