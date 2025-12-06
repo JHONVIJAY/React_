@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Twitter, Linkedin, Mail } from "lucide-react";
+import { Instagram, Facebook, Linkedin, Mail } from "lucide-react";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
