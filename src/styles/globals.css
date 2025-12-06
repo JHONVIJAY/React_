@@ -206,4 +206,4 @@
 html {
   font-size: var(--font-size);
 }
-html, body { width: 100%; margin: 0; background-color: #000; /* or whatever you want on the sides */ }
+html, body { width: 100%; margin: 0; overflow-x: hidden; background-color: #000; /* or whatever you want on the sides */ }
