@@ -72,7 +72,7 @@ export function Hero() {
             className="text-white text-3xl tracking-[0.15em]"
             style={{ fontFamily: "var(--font-heading)" }}
           >
-            AVA TILE
+            AVA TILES
           </div>
 
           {/* Desktop Navigation */}
