@@ -116,9 +116,9 @@ export function ChatBot() {
           style={{ height: '60vh', maxHeight: '100vh' }}
         >
           {/* Header */}
-          <div className="bg-gradient-to-r from-[#C9A55C] to-[#B89449] text-white p-4 sm:p-6 flex items-center justify-between flex-shrink-0">
+          <div className="bg-linear-to-r from-[#C9A55C] to-[#B89449] text-white p-4 sm:p-6 flex items-center justify-between shrink-0">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm flex-shrink-0">
+              <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm shrink-0">
                 <Bot className="w-5 h-5" />
               </div>
               <div className="min-w-0">
@@ -128,7 +128,7 @@ export function ChatBot() {
             </div>
             <button
               onClick={() => setIsOpen(false)}
-              className="hover:bg-white/20 p-2 rounded-lg transition-colors flex-shrink-0"
+              className="hover:bg-white/20 p-2 rounded-lg transition-colors shrink-0"
               aria-label="Close chat"
             >
               <X className="w-5 h-5" />
@@ -142,7 +142,7 @@ export function ChatBot() {
                 key={message.id}
                 className={`flex gap-2 sm:gap-3 ${message.sender === 'user' ? 'flex-row-reverse' : 'flex-row'}`}
               >
-                <div className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center flex-shrink-0 ${
+                <div className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center shrink-0 ${
                   message.sender === 'user' ? 'bg-gray-300' : 'bg-[#C9A55C]'
                 }`}>
                   {message.sender === 'user' ? (
@@ -170,7 +170,7 @@ export function ChatBot() {
 
           {/* Quick Replies */}
           {messages.length <= 2 && (
-            <div className="px-4 sm:px-6 py-3 bg-white border-t border-gray-100 flex-shrink-0">
+            <div className="px-4 sm:px-6 py-3 bg-white border-t border-gray-100 shrink-0">
               <p className="text-xs text-gray-500 mb-2 uppercase tracking-wider">Quick Actions</p>
               <div className="flex flex-wrap gap-2">
                 {quickReplies.map((reply, index) => (
@@ -187,7 +187,7 @@ export function ChatBot() {
           )}
 
           {/* Input */}
-          <div className="p-3 sm:p-4 bg-white border-t border-gray-200 flex-shrink-0 safe-bottom">
+          <div className="p-3 sm:p-4 bg-white border-t border-gray-200 shrink-0 safe-bottom">
             <div className="flex gap-2 items-end">
               <input
                 type="text"
@@ -200,7 +200,7 @@ export function ChatBot() {
               <button
                 onClick={() => handleSend()}
                 disabled={!inputValue.trim()}
-                className="bg-[#C9A55C] text-white p-2.5 sm:p-3 rounded-xl hover:bg-[#B89449] transition-all disabled:opacity-50 disabled:cursor-not-allowed flex-shrink-0"
+                className="bg-[#C9A55C] text-white p-2.5 sm:p-3 rounded-xl hover:bg-[#B89449] transition-all disabled:opacity-50 disabled:cursor-not-allowed shrink-0"
                 aria-label="Send message"
               >
                 <Send className="w-4 h-4 sm:w-5 sm:h-5" />
