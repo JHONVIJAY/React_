@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      ...:
-        specifier: link:...
-        version: link:...
       '@gsap/react':
         specifier: ^2.1.2
         version: 2.1.2(gsap@3.13.0)(react@19.2.1)
